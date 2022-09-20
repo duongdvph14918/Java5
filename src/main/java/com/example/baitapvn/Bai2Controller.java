@@ -10,7 +10,7 @@ public class Bai2Controller {
     @RequestMapping("/bai2")
     public String bailam2(@RequestParam(name = "str1") String str1 , Model model, Model model1){
         StringBuilder daonguoc = new StringBuilder(str1);
-// truyền dc liệu thông qua addAttribute đến view
+
         model1.addAttribute("daonguocbandau",str1);
         model.addAttribute("daonguoc",daonguoc.reverse());
         return "bai2";

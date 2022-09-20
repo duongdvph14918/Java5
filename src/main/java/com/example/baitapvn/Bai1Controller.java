@@ -17,7 +17,7 @@ public class Bai1Controller {
         } else {
             lonhon.append("bằng nhau");
         }
-        // truyền dc liệu thông qua addAttribute đến view
+
         model.addAttribute("lonhon1",str1);
         model.addAttribute("lonhon2",str2);
         model.addAttribute("lonhon", lonhon);
